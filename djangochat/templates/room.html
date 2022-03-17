@@ -5,7 +5,7 @@
 <style>
 body {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 500px;
   padding: 0 20px;
 }
 
@@ -58,15 +58,6 @@ body {
 <body>
 
 <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">{{room}} - Team Chat</h1>
-
-<div id="display">
-
-<!-- <div class="container darker">
-  <b>Tom</b><p>Hello Everyone, How Are You Guys Doing?</p>
-  <span class="time-left">20th, April 2021</span>
-</div> -->
-
-</div>
 
 <script>
 $(document).ready(function(){
@@ -153,7 +144,7 @@ setInterval(function(){
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-         //alert(data)
+         //alert
       }
     });
     document.getElementById('message').value = ''
